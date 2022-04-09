@@ -1,0 +1,23 @@
+{
+  "name": "07-express-session",
+  "version": "1.0.0",
+  "description": "This is a learning notes of how to dealing with session with `express`.",
+  "main": "index.js",
+  "scripts": {
+    "devStart": "nodemon index.js",
+    "start": "node index.js"
+  },
+  "keywords": [],
+  "author": "Zhong <zhongdai.au@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "connect-redis": "^6.1.3",
+    "express": "^4.17.3",
+    "express-session": "^1.17.2",
+    "redis": "^4.0.6"
+  },
+  "devDependencies": {
+    "dotenv": "^16.0.0",
+    "nodemon": "^2.0.15"
+  }
+}

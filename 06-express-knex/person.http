@@ -4,5 +4,13 @@ Content-Type: application/json
 {
     "firstName": "Zhong",
     "lastName": "Dai",
-    "email": "xyz@gmail.com"
+    "email": "123xyz@gmail.com"
 }
+
+###
+
+GET http://localhost:3001/person
+
+
+###
+GET http://localhost:3001/person/2

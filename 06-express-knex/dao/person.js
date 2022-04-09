@@ -12,6 +12,18 @@ class PersonDAO {
 
     return id;
   }
+
+  async findAll() {
+    const people = await db.select().table("person").returning("*");
+
+    return people;
+  }
+
+  async findById(id) {
+    const person = await db("person").where("id", id).returning("*");
+
+    return person;
+  }
 }
 
 module.exports = new PersonDAO();

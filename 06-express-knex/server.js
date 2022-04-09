@@ -1,10 +1,11 @@
 const express = require("express");
-const router = require('./routes')
 const app = express();
 
 app.use(express.json());
-app.use(router)
 
-app.listen(3001, () => {
-    console.log('server started')
+const personRouter = require("./routes/person");
+app.use("/person", personRouter);
+
+app.listen(process.env.PORT || 3001, () => {
+  console.log("Server started to listen on 3001");
 });
